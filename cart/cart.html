@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top px-lg-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../public/logo.png" alt="logo">
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close mt-3 me-3" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../about/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../products/products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../support/support.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../where-to-buy/dealer.html">Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../contact/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2 icons">
+                <li class="nav-item"><a class="mx-lg-2" href=""><i class="bi bi-search"></i></a></li>
+                <li class="nav-item"><a class="mx-lg-2" href="cart.html"><i class="bi bi-cart3 cart-active"></i></a>
+                </li>
+                <li class="nav-item"><a class="mx-lg-2" href=""><i class="bi bi-person-circle"></i></a></li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- end-navbar -->
+
+    <!-- cart-section -->
+    <div class="cart-cont">
+
+
+        <h2>Your shopping cart</h2>
+
+
+        <table class="mt-5">
+            <tr>
+                <th>Product</th>
+                <th class="qn">Quantity</th>
+                <th>Total</th>
+            </tr>
+
+
+            <!-- PRODUCT 1 -->
+            <tr>
+                <td>
+                    <div class="product-box d-flex">
+                        <img src="../public/f5dc1cede6843ff547af3baae51994785c145c22.jpg" class="product-img" />
+                        <div class="d-flex flex-column  justify-content-center">
+                            <div class="title">Toshiba Canvio Advance 2TB External HDD</div>
+                            <div class="subtitle">USB 3.2 | Automatic Backup Software</div>
+                            <div class="price fw-bold">$69.99</div>
+                        </div>
+                    </div>
+                </td>
+
+
+                <td>
+                    <div class="qty-controls">
+                        <span class="qty-btn">-</span>
+                        <span>1</span>
+                        <span class="qty-btn">+</span>
+                    </div>
+                </td>
+
+
+                <td class="total">$69.99</td>
+            </tr>
+
+
+            <!-- PRODUCT 2 -->
+            <tr>
+                <td>
+                    <div class="product-box d-flex">
+                        <img src="../public/b9a17cefded12ad3ec8a530f8f8a7dd8c01df9e7.png" class="product-img" />
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="title">Western Digital My Passport 4TB HDD</div>
+                            <div class="subtitle">Gen9, 1TB | Up to 7300 MB/s read speed</div>
+                            <div class="price fw-bold">$169.99</div>
+                        </div>
+                    </div>
+                </td>
+
+
+                <td>
+                    <div class="qty-controls">
+                        <span class="qty-btn">-</span>
+                        <span>1</span>
+                        <span class="qty-btn">+</span>
+                    </div>
+                </td>
+
+
+                <td class="total">$169.99</td>
+            </tr>
+        </table>
+
+
+        <div class="line"></div>
+
+
+        <div class="summary-box">
+            <div class="summary-row"><b>Subtotal</b> $239.98</div>
+            <div class="orange-text">Taxes and shipping are calculated at checkout</div>
+            <a href="#" class="checkout-btn">Go to checkout</a>
+        </div>
+
+
+    </div>
+    <!-- end-cart-section  -->
+
+    <!-- footer-section -->
+    <footer class="container-fluid bg-dark">
+        <div class="foot-cont d-flex">
+            <div class="cont1">
+                <h2 class="text-white">Ocean<span>Gate</span> Limited</h2>
+                <div class="content">
+                    <p class="icon-name">Address</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> 45 Tech Avenue, Silicon Park, Karachi, Pakistan</p>
+                    <p class="icon-name">Contact</p>
+                    <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+                </div>
+            </div>
+            <div class="cont2">
+                <h5>Services</h5>
+                <ul>
+                    <li>SSD & HDD Sales</li>
+                    <li>Enterprise Storage Solutions</li>
+                    <li>Cloud Backup Services</li>
+                    <li>Data Recovery</li>
+                    <li>Custom Storage Builds</li>
+                    <li>Maintenance & Support</li>
+                </ul>
+            </div>
+            <div class="cont3">
+                <h5>Legal</h5>
+                <ul>
+                    <li>Contact</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+                <div class="foot-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom container-fluid text-center">
+        © Copyright 2025 - OceanGate All Rights Reserved
+    </div>
+    <!-- end-footer-section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const currentPage = window.location.pathname.split("/").pop(); 
+
+            document.querySelectorAll(".nav-link").forEach(link => {
+                let linkPage = link.getAttribute("href").split("/").pop(); 
+
+                if (linkPage === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

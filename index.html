@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanGate Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top px-lg-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="public/logo.png" alt="logo">
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close mt-3 me-3" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="about/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="products/products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="support/support.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="where-to-buy/dealer.html">Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contact/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2 icons">
+                <li class="nav-item"><a class="mx-lg-2" href=""><i class="bi bi-search"></i></a></li>
+                <li class="nav-item"><a class="mx-lg-2" href="cart/cart.html"><i class="bi bi-cart3"></i></a></li>
+                <li class="nav-item"><a class="mx-lg-2" href=""><i class="bi bi-person-circle"></i></a></li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- end-navbar -->
+
+    <!-- herosection -->
+    <div class="d-flex herosection" id="hero">
+        <div class="left">
+            <button class="btn str-btn" id="hero-btn">Smart Storage <i class="bi bi-floppy"></i></button>
+            <h1 id="hero-title">Ocean<span>Gate</span> Limited</h1>
+            <h3 class="salogan" id="hero-subtitle">Where <span>Innovation</span> Meets Every Byte</h3>
+            <p class="intro" id="hero-intro">At OceanGate Limited, we believe data deserves more than just storage — it
+                deserves
+                precision and care. With advanced technology, we create reliable solutions built to last. Experience
+                innovation and trust in every byte.</p>
+            <div class="buttons d-flex gap-5 mt-5">
+                <button class="btn d-flex align-items-center gap-3 button btn1" id="hero-btn">Shop Now <i
+                        class="bi bi-bag"></i></button>
+                <button class="btn d-flex align-items-center gap-3 button btn2" id="hero-btn">Contact <i
+                        class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/image 1.png" alt="">
+        </div>
+    </div>
+    <!-- end-herosection -->
+
+    <!-- main-section -->
+    <div class="container-fluid main d-flex flex-column">
+        <p class="text-center sub-head1">Unleash the power of performance</p>
+        <h2 class="text-center mt-4">Featured Products</h2>
+        <div class="d-flex mt-5 card-container">
+            <div class="card">
+                <img src="public/image1.jpg" class="card-img-top" alt="Crucial T700" style="height: 260px;">
+                <div class="card-body mx-3">
+                    <h5 class="card-title name">Crucial T700 PCIe Gen4 NVMe M.2 SSD</h5>
+                    <p class="card-text range">Gen4, 1TB | Up to 7300 MB/s read speed</p>
+                    <p class="fw-bold price">$169.99</p>
+                    <a href="#" class="btn buy-btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="public/DTXS_64GB.jpg" class="card-img-top" alt="Kingston DataTraveler" style="height: 260px;">
+                <div class="card-body mx-3">
+                    <h5 class="card-title name">Kingston DataTraveler Exodia 64GB USB Flash Drive</h5>
+                    <p class="card-text range">USB 3.2 Gen 1 | Cap Design | Plug & Play</p>
+                    <p class="fw-bold price">$12.99</p>
+                    <a href="#" class="btn buy-btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="public/HV620S.jpg" class="card-img-top" alt="1TB External Hard Drive" style="height: 260px;">
+                <div class="card-body mx-3">
+                    <h5 class="card-title name">HV620S 1TB Portable External Hard Drive</h5>
+                    <p class="card-text range">USB 3.1 | Slim Design | Shock Resistance</p>
+                    <p class="fw-bold price">$54.99</p>
+                    <a href="#" class="btn buy-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-main-section -->
+
+    <!-- customer-review -->
+    <div class="container-fluid review d-flex align-items-center flex-column">
+        <h2 class="head">What Our Customers Say</h2>
+        <p class="sub-head2">Trusted by professionals worldwide for speed and durability</p>
+        <div class="testimonials owl-carousel">
+            <div class="testimonial-card item1">
+                <p class="rev">OceanGate's SSDs transformed my workflow! Blazing speeds and rock-solid stability.</p>
+                <div class="avator-card d-flex align-items-center">
+                    <div class="avator"><img src="public/icons8-avatar-50.png" alt=""></div>
+                    <h6 class="author">John M., Photographer</h6>
+                </div>
+                <div class="stars d-flex gap-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+            <div class="testimonial-card item2">
+                <p class="rev">OceanGate's SSDs transformed my workflow! Blazing speeds and rock-solid stability.</p>
+                <div class="avator-card d-flex align-items-center">
+                    <div class="avator"><img src="public/icons8-avatar-50.png" alt=""></div>
+                    <h6 class="author">Jane M., Photographer</h6>
+                </div>
+                <div class="stars d-flex gap-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+            </div>
+            <div class="testimonial-card item3">
+                <p class="rev">OceanGate's SSDs transformed my workflow! Blazing speeds and rock-solid stability.</p>
+                <div class="avator-card d-flex align-items-center">
+                    <div class="avator"><img src="public/icons8-avatar-50.png" alt=""></div>
+                    <h6 class="author">John M., Photographer</h6>
+                </div>
+                <div class="stars d-flex gap-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+            <div class="testimonial-card item4">
+                <p class="rev">OceanGate's SSDs transformed my workflow! Blazing speeds and rock-solid stability.</p>
+                <div class="avator-card d-flex align-items-center">
+                    <div class="avator"><img src="public/icons8-avatar-50.png" alt=""></div>
+                    <h6 class="author">Jane M., Photographer</h6>
+                </div>
+                <div class="stars d-flex gap-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-customer-review -->
+
+    <!-- event-section -->
+    <div class="container-fluid review event d-flex align-items-center flex-column">
+        <h2 class="head text-center">Stay Informed with Our Latest News</h2>
+        <p class="sub-head2 text-center">Subscribe to our newsletter for product updates, exclusive offers, and tech
+            tips</p>
+        <div class="email d-flex">
+            <input type="email" name="" id="em-inp" placeholder="Enter your email...">
+            <button class="btn sub-btn">Subscribe</button>
+        </div>
+    </div>
+    <!-- end-event-section  -->
+
+    <!-- footer-section -->
+    <footer class="container-fluid bg-dark">
+        <div class="foot-cont d-flex">
+            <div class="cont1">
+                <h2 class="text-white">Ocean<span>Gate</span> Limited</h2>
+                <div class="content">
+                    <p class="icon-name">Address</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> 45 Tech Avenue, Silicon Park, Karachi, Pakistan</p>
+                    <p class="icon-name">Contact</p>
+                    <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+                </div>
+            </div>
+            <div class="cont2">
+                <h5>Services</h5>
+                <ul>
+                    <li>SSD & HDD Sales</li>
+                    <li>Enterprise Storage Solutions</li>
+                    <li>Cloud Backup Services</li>
+                    <li>Data Recovery</li>
+                    <li>Custom Storage Builds</li>
+                    <li>Maintenance & Support</li>
+                </ul>
+            </div>
+            <div class="cont3">
+                <h5>Legal</h5>
+                <ul>
+                    <li>Contact</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+                <div class="foot-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom container-fluid text-center">
+        © Copyright 2025 - OceanGate All Rights Reserved
+    </div>
+    <!-- end-footer-section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.testimonials').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            });
+            const currentPage = window.location.pathname.split("/").pop(); 
+
+            document.querySelectorAll(".nav-link").forEach(link => {
+                let linkPage = link.getAttribute("href").split("/").pop(); 
+
+                if (linkPage === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
